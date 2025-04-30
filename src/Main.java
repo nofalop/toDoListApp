@@ -1,3 +1,4 @@
+import java.util.Map;
 import java.util.Scanner;
 public class Main {
 	public static void main(String[] args){
@@ -15,6 +16,28 @@ public class Main {
 			clearConsole();
 		}
 	}
+
+	private static void addTask(){
+		Scanner scanner = new Scanner(System.in);
+
+		System.out.println("Enter a Task: ");
+		String userTask = scanner.nextLine().toLowerCase();
+
+		if(!userTask.isEmpty()){
+			return;
+		}
+		Info.taskInfo.put(userTask, false);
+	}
+
+	private static void markTask(){
+
+	}
+
+	private static void removeTask(){
+
+	}
+
+
 
 	private static void UserInput() {
 		Scanner scanner = new Scanner(System.in);

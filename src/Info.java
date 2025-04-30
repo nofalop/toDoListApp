@@ -1,9 +1,6 @@
-import java.util.ArrayList;
-import java.util.Dictionary;
-import java.util.Hashtable;
-import java.util.List;
+import java.util.*;
 
 public class Info {
 	public static List<String> Task= new ArrayList<>();
-	public static Dictionary<String,Boolean> taskInfo= new Hashtable<>();
+	public static Map<String,Boolean> taskInfo= new HashMap<>();
 }
