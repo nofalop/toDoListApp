@@ -40,6 +40,22 @@ public class Logic {
 
 	private void removeTask(){
 
+		Scanner scanner = new Scanner(System.in);
+		System.out.println("Enter a task to remove: ");
+
+		viewTasks();
+
+		String selectedItem = scanner.nextLine().toLowerCase();
+
+		for(Map.Entry<String, Boolean> entry : Info.taskInfo.entrySet()) {
+			if (entry.getKey().equals(selectedItem)) {
+				Info.taskInfo.remove(selectedItem, entry.getValue());
+				return;
+			}
+			else{
+				System.out.println("Enter a valid Task");
+			}
+		}
 	}
 
 	public void UserInput() {

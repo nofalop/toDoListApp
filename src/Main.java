@@ -5,13 +5,19 @@ public class Main {
 		while (true){
 			System.out.println(
 					"""
-					TodoList
-					1-Add Task
-					2-mark Task
-					3-Remove Task
-					4-View Tasks
-					5-Quit"""
+					============================
+						   Todo List Menu
+					============================
+					1 - Add Task
+					2 - Mark Task as Done
+					3 - Remove Task
+					4 - View Tasks
+					5 - Quit
+					============================
+					Please choose an option:
+					"""
 			);
+
 			Logic logic = new Logic();
 			logic.UserInput();
 		}
